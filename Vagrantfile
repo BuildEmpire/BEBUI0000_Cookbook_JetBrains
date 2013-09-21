@@ -7,7 +7,11 @@ Vagrant.configure("2") do |global_config|
   global_config.berkshelf.enabled = true
   global_config.vm.box = "precise64"
   global_config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-  global_config.vm.network :forwarded_port, guest: 8111, host: 8111
+  global_config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", 2048]
+  end
+  global_config.vm.network :private_network, ip: '192.168.50.100'
+  global_config.vm.network :forwarded_port, guest: 80, host: 80
   global_config.vm.provision :shell, :path => "configure.sh"
   global_config.vm.provision :chef_solo do |chef|
 	chef.json = {
@@ -18,9 +22,13 @@ Vagrant.configure("2") do |global_config|
 		},
     "cookbook_jetbrains" => {
       "teamcity" => {
+        "address" => "teamcity.buildempire.co.uk",
         "database_name" => "app1_production",
         "username" => "app1",
         "password" => "app1_pass"
+      },
+      "youtrack" => {
+        "address" => "youtrack.buildempire.co.uk"
       }
     },
     "databox" => {

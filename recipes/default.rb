@@ -10,3 +10,5 @@ include_recipe "databox::postgresql"
 include_recipe "java"
 
 include_recipe "cookbook_jetbrains::teamcity"
+include_recipe "cookbook_jetbrains::youtrack"
+include_recipe "cookbook_jetbrains::configure"

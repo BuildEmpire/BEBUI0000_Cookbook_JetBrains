@@ -9,6 +9,8 @@ archive_directory = Chef::Config[:file_cache_path]
 server_archive_name = "TeamCity-#{node["cookbook_jetbrains"]["teamcity"]["version"]}.tar.gz"
 server_archive_path = "#{archive_directory}/#{server_archive_name}"
 server_directory = "/opt/teamcity/#{node["cookbook_jetbrains"]["teamcity"]["version"]}"
+webapps_directory = "#{server_directory}/TeamCity/webapps"
+teamcity_directory = "#{webapps_directory}/teamcity"
 remote_file server_archive_path do
   backup false
   source "http://download.jetbrains.com/teamcity/#{server_archive_name}"
@@ -20,19 +22,13 @@ bash "install-teamcity" do
     mkdir -p #{server_directory}
     cd #{server_directory}
     tar -xvf #{server_archive_path}
+    mkdir -p #{teamcity_directory}
+    mv #{webapps_directory}/ROOT #{teamcity_directory}/ROOT
   EOH
   action :nothing
 end
 
-# Configure TeamCity Server
-config_directory = "#{server_directory}/TeamCity/conf"
-template "#{config_directory}/server.xml" do
-  source "server.xml.erb"
-  variables(
-    :address => node["cookbook_jetbrains"]["teamcity"]["address"],
-    :port => node["cookbook_jetbrains"]["teamcity"]["port"]
-  )
-end
+# Link to the current teamcity installation
 link "/opt/teamcity/current" do
   to server_directory
 end
@@ -75,10 +71,4 @@ cookbook_file "/etc/init/teamcity-server.conf" do
   source "teamcity-server.conf"
   action :create_if_missing
   notifies :start, "service[teamcity-server]", :immediately
-end
-
-# Start TeamCity Service
-service "teamcity-server" do
-  provider Chef::Provider::Service::Upstart
-  action :restart
 end
