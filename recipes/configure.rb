@@ -14,6 +14,14 @@ template "#{config_directory}/server.xml" do
   )
 end
 
+# Create TeamCity Service
+cookbook_file "/etc/init/teamcity-server.conf" do
+  backup false
+  source "teamcity-server.conf"
+  action :create_if_missing
+  notifies :start, "service[teamcity-server]", :immediately
+end
+
 # Start TeamCity Service
 service "teamcity-server" do
   provider Chef::Provider::Service::Upstart

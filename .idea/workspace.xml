@@ -46,6 +46,7 @@
     <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/Vagrantfile" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379757506809" ignored="false" />
     <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/nodes/162.13.114.203.json" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379759553999" ignored="false" />
     <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/Berksfile" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379759526107" ignored="false" />
+    <file path="/teamcity-server.conf" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379765171616" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +116,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="teamcity.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recipes/teamcity.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="0" selection-start="2172" selection-end="2172" vertical-scroll-proportion="-18.44">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teamcity-server.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/default/teamcity-server.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="73" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configure.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recipes/configure.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="45" selection-start="536" selection-end="556" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -127,7 +155,6 @@
       <list>
         <option value="$PROJECT_DIR$/attributes/java.rb" />
         <option value="$PROJECT_DIR$/templates/default/database.properties.erb" />
-        <option value="$PROJECT_DIR$/files/default/teamcity-server.conf" />
         <option value="$PROJECT_DIR$/attributes/default.rb" />
         <option value="$PROJECT_DIR$/recipes/default.rb" />
         <option value="$PROJECT_DIR$/recipes/youtrack.rb" />
@@ -136,6 +163,7 @@
         <option value="$PROJECT_DIR$/Berksfile" />
         <option value="$PROJECT_DIR$/recipes/teamcity.rb" />
         <option value="$PROJECT_DIR$/recipes/configure.rb" />
+        <option value="$PROJECT_DIR$/files/default/teamcity-server.conf" />
         <option value="$PROJECT_DIR$/metadata.rb" />
       </list>
     </option>
@@ -531,11 +559,6 @@
         <state line="1" column="31" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/default/teamcity-server.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="68" selection-start="219" selection-end="272" vertical-scroll-proportion="0.26842105" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/attributes/default.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="43" selection-start="106" selection-end="106" vertical-scroll-proportion="0.028911564" />
@@ -556,20 +579,6 @@
         <state line="130" column="13" selection-start="5977" selection-end="5977" vertical-scroll-proportion="0.74377227" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recipes/configure.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="3" selection-start="604" selection-end="604" vertical-scroll-proportion="0.5782313">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipes/teamcity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="3" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.82653064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Berksfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.05782313">
@@ -580,6 +589,27 @@
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="5" selection-start="666" selection-end="2107" vertical-scroll-proportion="0.8278261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipes/configure.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="45" selection-start="536" selection-end="556" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipes/teamcity.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2172" selection-end="2172" vertical-scroll-proportion="-18.44">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/default/teamcity-server.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="73" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
