@@ -31,7 +31,7 @@
     <file path="/metadata.rb" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379521934455" ignored="false" />
     <file path="/default.rb" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379711719582" ignored="false" />
     <file path="/Vagrantfile" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379711043633" ignored="false" />
-    <file path="/a.dummy" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379683777419" ignored="false" />
+    <file path="/a.dummy" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379766206429" ignored="false" />
     <file path="/teamcity.rb" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379684394346" ignored="false" />
     <file path="/database.properties.erb" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379608028053" ignored="false" />
     <file path="/youtrack.rb" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379706896642" ignored="false" />
@@ -44,9 +44,12 @@
     <file path="$PROJECT_DIR$/../BEBUI0000_Cookbook_TeamCity_Build_Agent/Vagrantfile" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379712961326" ignored="false" />
     <file path="$PROJECT_DIR$/../BEBUI0000_Cookbook_TeamCity_Build_Agent/attributes/default.rb" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379711050765" ignored="false" />
     <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/Vagrantfile" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379757506809" ignored="false" />
-    <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/nodes/162.13.114.203.json" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379759553999" ignored="false" />
+    <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/nodes/162.13.114.203.json" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379765676075" ignored="false" />
     <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/Berksfile" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379759526107" ignored="false" />
     <file path="/teamcity-server.conf" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379765171616" ignored="false" />
+    <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/Berksfile.lock" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379765616424" ignored="false" />
+    <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/nodes/95.138.189.131.json" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379766192072" ignored="false" />
+    <file path="$PROJECT_DIR$/../BEBUI0000_Deployment_Server/kitchen/nodes/www.buildempire.co.uk.json" changelist="e772faf7-4dcb-4e2c-af1a-7dd20b6ae3df" time="1379766209975" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,33 +114,6 @@
         <entry file="file://$PROJECT_DIR$/metadata.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="23" selection-start="304" selection-end="304" vertical-scroll-proportion="0.1734694">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teamcity.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recipes/teamcity.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2172" selection-end="2172" vertical-scroll-proportion="-18.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teamcity-server.conf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/default/teamcity-server.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="73" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configure.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recipes/configure.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="536" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -595,21 +571,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recipes/configure.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="536" selection-end="556" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipes/teamcity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2172" selection-end="2172" vertical-scroll-proportion="-18.44">
+        <state line="21" column="24" selection-start="660" selection-end="661" vertical-scroll-proportion="0.60714287">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/default/teamcity-server.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="73" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+        <state line="7" column="22" selection-start="182" selection-end="182" vertical-scroll-proportion="0.20238096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipes/teamcity.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.8188277">
           <folding />
         </state>
       </provider>
