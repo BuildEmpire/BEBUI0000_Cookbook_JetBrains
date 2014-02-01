@@ -50,6 +50,8 @@ end
 
 # Setup the database properties file for TeamCity
 data_config_directory = "#{data_directory}/config"
+data_plugins_directory = "#{data_directory}/plugins"
+
 directory data_config_directory do
   recursive true
   action :create
@@ -65,3 +67,9 @@ template "#{data_config_directory}/database.properties" do
   )
 end
 
+# Copy the teamcity github plugin into place.
+cookbook_file "#{data_plugins_directory}/teamcity.github.zip" do
+  backup false
+  source "teamcity.github.zip"
+  action :create_if_missing
+end
