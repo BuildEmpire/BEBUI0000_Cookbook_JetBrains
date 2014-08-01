@@ -68,6 +68,10 @@ template "#{data_config_directory}/database.properties" do
 end
 
 # Copy the teamcity github plugin into place.
+directory data_plugins_directory do
+  recursive true
+  action :create
+end
 cookbook_file "#{data_plugins_directory}/teamcity.github.zip" do
   backup false
   source "teamcity.github.zip"
