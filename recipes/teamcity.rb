@@ -77,3 +77,8 @@ cookbook_file "#{data_plugins_directory}/teamcity.github.zip" do
   source "teamcity.github.zip"
   action :create_if_missing
 end
+cookbook_file "#{data_plugins_directory}/jonnyzzz.node.zip" do
+  backup false
+  source "jonnyzzz.node.zip"
+  action :create_if_missing
+end
